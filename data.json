@@ -1,0 +1,1175 @@
+{
+  "meta": {
+    "version": "2.1.84",
+    "lastUpdated": "2026-03-26",
+    "changelogUrl": "https://code.claude.com/docs/en/changelog",
+    "newBadgeDays": 14
+  },
+  "sections": [
+    {
+      "id": "keyboard-shortcuts",
+      "title": "키보드 단축키",
+      "icon": "⌨️",
+      "items": [
+        {
+          "label": "현재 입력/생성 취소",
+          "mac": "Ctrl+C",
+          "win": "Ctrl+C",
+          "description": "표준 인터럽트"
+        },
+        {
+          "label": "백그라운드 에이전트 종료",
+          "mac": "Ctrl+X Ctrl+K",
+          "win": "Ctrl+X Ctrl+K",
+          "description": "3초 내 두 번 눌러 확인",
+          "isNew": true,
+          "addedVersion": "2.1.49"
+        },
+        {
+          "label": "세션 종료",
+          "mac": "Ctrl+D",
+          "win": "Ctrl+D",
+          "description": "EOF 시그널"
+        },
+        {
+          "label": "외부 텍스트 에디터 열기",
+          "mac": "Ctrl+G / Ctrl+X Ctrl+E",
+          "win": "Ctrl+G / Ctrl+X Ctrl+E",
+          "description": "$EDITOR로 프롬프트 편집"
+        },
+        {
+          "label": "터미널 화면 클리어",
+          "mac": "Ctrl+L",
+          "win": "Ctrl+L",
+          "description": "대화 기록은 유지됨"
+        },
+        {
+          "label": "상세 출력 토글",
+          "mac": "Ctrl+O",
+          "win": "Ctrl+O",
+          "description": "도구 사용 및 실행 상세 정보 표시"
+        },
+        {
+          "label": "명령 히스토리 검색",
+          "mac": "Ctrl+R",
+          "win": "Ctrl+R",
+          "description": "역방향 대화형 검색"
+        },
+        {
+          "label": "클립보드 이미지 붙여넣기",
+          "mac": "Ctrl+V / Cmd+V",
+          "win": "Ctrl+V / Alt+V",
+          "description": "[Image #N] 칩 삽입"
+        },
+        {
+          "label": "실행 중인 작업 백그라운드",
+          "mac": "Ctrl+B",
+          "win": "Ctrl+B",
+          "description": "bash 명령 및 에이전트 백그라운드 처리. tmux는 두 번"
+        },
+        {
+          "label": "작업 목록 토글",
+          "mac": "Ctrl+T",
+          "win": "Ctrl+T",
+          "description": "터미널 상태 영역에 작업 목록 표시/숨기기"
+        },
+        {
+          "label": "되감기 / 요약",
+          "mac": "Esc + Esc",
+          "win": "Esc + Esc",
+          "description": "이전 시점으로 코드/대화 복원 또는 요약 생성"
+        },
+        {
+          "label": "권한 모드 전환",
+          "mac": "Shift+Tab / Alt+M",
+          "win": "Shift+Tab / Alt+M",
+          "description": "default → acceptEdits → plan → auto 순환"
+        },
+        {
+          "label": "모델 전환",
+          "mac": "Option+P",
+          "win": "Alt+P",
+          "description": "프롬프트 지우지 않고 모델 변경"
+        },
+        {
+          "label": "확장 사고 토글",
+          "mac": "Option+T",
+          "win": "Alt+T",
+          "description": "확장 사고 모드 활성화/비활성화"
+        },
+        {
+          "label": "패스트 모드 토글",
+          "mac": "Option+O",
+          "win": "Alt+O",
+          "description": "빠른 응답 모드 전환"
+        },
+        {
+          "label": "음성 입력 (푸시투톡)",
+          "mac": "Space 길게 누르기",
+          "win": "Space 길게 누르기",
+          "description": "/voice 활성화 후 사용 가능. 키 재매핑 가능",
+          "isNew": true,
+          "addedVersion": "2.1.71"
+        }
+      ]
+    },
+    {
+      "id": "text-editing",
+      "title": "텍스트 편집",
+      "icon": "✏️",
+      "items": [
+        {
+          "label": "줄 끝까지 삭제",
+          "mac": "Ctrl+K",
+          "win": "Ctrl+K",
+          "description": "삭제된 텍스트 저장됨"
+        },
+        {
+          "label": "줄 전체 삭제",
+          "mac": "Ctrl+U",
+          "win": "Ctrl+U",
+          "description": "삭제된 텍스트 저장됨"
+        },
+        {
+          "label": "삭제된 텍스트 붙여넣기",
+          "mac": "Ctrl+Y",
+          "win": "Ctrl+Y",
+          "description": "Ctrl+K/U로 삭제한 텍스트"
+        },
+        {
+          "label": "붙여넣기 히스토리 순환",
+          "mac": "Alt+Y",
+          "win": "Alt+Y",
+          "description": "Ctrl+Y 이후 사용"
+        },
+        {
+          "label": "단어 뒤로 이동",
+          "mac": "Alt+B",
+          "win": "Alt+B",
+          "description": "단어 단위 탐색"
+        },
+        {
+          "label": "단어 앞으로 이동",
+          "mac": "Alt+F",
+          "win": "Alt+F",
+          "description": "단어 단위 탐색"
+        }
+      ]
+    },
+    {
+      "id": "multiline",
+      "title": "멀티라인 입력",
+      "icon": "↵",
+      "items": [
+        {
+          "label": "빠른 줄바꿈",
+          "mac": "\\ + Enter",
+          "win": "\\ + Enter",
+          "description": "모든 터미널에서 동작"
+        },
+        {
+          "label": "macOS 기본",
+          "mac": "Option+Enter",
+          "win": "—",
+          "description": "macOS 기본 줄바꿈"
+        },
+        {
+          "label": "Shift+Enter",
+          "mac": "Shift+Enter",
+          "win": "Shift+Enter",
+          "description": "iTerm2, WezTerm, Ghostty, Kitty 기본 지원"
+        },
+        {
+          "label": "제어 시퀀스",
+          "mac": "Ctrl+J",
+          "win": "Ctrl+J",
+          "description": "줄바꿈 문자(Line Feed)"
+        }
+      ]
+    },
+    {
+      "id": "slash-commands",
+      "title": "슬래시 명령어",
+      "icon": "/",
+      "items": [
+        {
+          "label": "/clear",
+          "description": "대화 기록 초기화. 별칭: /reset, /new",
+          "category": "세션"
+        },
+        {
+          "label": "/compact [지시사항]",
+          "description": "선택적 초점 지시와 함께 대화 압축",
+          "category": "세션"
+        },
+        {
+          "label": "/resume [세션]",
+          "description": "ID 또는 이름으로 대화 재개. 별칭: /continue",
+          "category": "세션"
+        },
+        {
+          "label": "/branch [이름]",
+          "description": "현재 지점에서 대화 분기. 별칭: /fork",
+          "category": "세션"
+        },
+        {
+          "label": "/rewind",
+          "description": "이전 시점으로 되감기. 별칭: /checkpoint",
+          "category": "세션"
+        },
+        {
+          "label": "/rename [이름]",
+          "description": "세션 이름 변경. 인수 없으면 자동 생성",
+          "category": "세션"
+        },
+        {
+          "label": "/export [파일명]",
+          "description": "현재 대화를 텍스트로 내보내기",
+          "category": "세션"
+        },
+        {
+          "label": "/copy [N]",
+          "description": "마지막 응답 클립보드 복사. N으로 특정 응답 선택. w키로 파일 저장",
+          "category": "세션"
+        },
+        {
+          "label": "/model [모델]",
+          "description": "AI 모델 변경. ←/→로 노력 수준 조절",
+          "category": "모델"
+        },
+        {
+          "label": "/effort [low|medium|high|max|auto]",
+          "description": "모델 노력 수준 설정. max는 Opus 4.6 전용",
+          "category": "모델",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "/fast [on|off]",
+          "description": "패스트 모드 전환",
+          "category": "모델"
+        },
+        {
+          "label": "/config",
+          "description": "설정 인터페이스 열기. 별칭: /settings",
+          "category": "설정"
+        },
+        {
+          "label": "/permissions",
+          "description": "권한 보기/수정. 별칭: /allowed-tools",
+          "category": "설정"
+        },
+        {
+          "label": "/memory",
+          "description": "CLAUDE.md 메모리 파일 편집, 자동 메모리 관리",
+          "category": "설정"
+        },
+        {
+          "label": "/theme",
+          "description": "컬러 테마 변경 (라이트, 다크, 색맹 친화적)",
+          "category": "설정"
+        },
+        {
+          "label": "/color [색상|default]",
+          "description": "프롬프트 바 색상 설정",
+          "category": "설정",
+          "isNew": true,
+          "addedVersion": "2.1.75"
+        },
+        {
+          "label": "/vim",
+          "description": "Vim/일반 편집 모드 전환",
+          "category": "설정"
+        },
+        {
+          "label": "/terminal-setup",
+          "description": "터미널 키바인딩 설정 (Shift+Enter 등)",
+          "category": "설정"
+        },
+        {
+          "label": "/keybindings",
+          "description": "키바인딩 설정 파일 열기/생성",
+          "category": "설정"
+        },
+        {
+          "label": "/voice",
+          "description": "푸시투톡 음성 입력 전환",
+          "category": "설정",
+          "isNew": true,
+          "addedVersion": "2.1.71"
+        },
+        {
+          "label": "/mcp",
+          "description": "MCP 서버 연결 및 OAuth 인증 관리",
+          "category": "도구"
+        },
+        {
+          "label": "/plugin",
+          "description": "Claude Code 플러그인 관리",
+          "category": "도구"
+        },
+        {
+          "label": "/reload-plugins",
+          "description": "활성 플러그인 재로드",
+          "category": "도구",
+          "isNew": true,
+          "addedVersion": "2.1.69"
+        },
+        {
+          "label": "/agents",
+          "description": "에이전트 설정 관리",
+          "category": "도구"
+        },
+        {
+          "label": "/skills",
+          "description": "사용 가능한 스킬 목록",
+          "category": "도구"
+        },
+        {
+          "label": "/hooks",
+          "description": "도구 이벤트 훅 설정 보기",
+          "category": "도구"
+        },
+        {
+          "label": "/sandbox",
+          "description": "샌드박스 모드 전환",
+          "category": "도구"
+        },
+        {
+          "label": "/chrome",
+          "description": "Chrome 연동 설정",
+          "category": "도구"
+        },
+        {
+          "label": "/ide",
+          "description": "IDE 연동 관리 및 상태 표시",
+          "category": "도구"
+        },
+        {
+          "label": "/btw <질문>",
+          "description": "대화 기록에 추가하지 않는 빠른 사이드 질문",
+          "category": "유틸"
+        },
+        {
+          "label": "/plan [설명]",
+          "description": "플랜 모드 진입. 설명 전달 시 즉시 계획 시작",
+          "category": "유틸"
+        },
+        {
+          "label": "/context",
+          "description": "현재 컨텍스트 사용량 시각화 (컬러 그리드)",
+          "category": "유틸"
+        },
+        {
+          "label": "/diff",
+          "description": "커밋되지 않은 변경사항 및 턴별 diff 뷰어",
+          "category": "유틸"
+        },
+        {
+          "label": "/cost",
+          "description": "토큰 사용 통계 표시",
+          "category": "유틸"
+        },
+        {
+          "label": "/usage",
+          "description": "요금제 사용 한도 및 속도 제한 상태",
+          "category": "유틸"
+        },
+        {
+          "label": "/stats",
+          "description": "일일 사용량, 세션 기록, 연속 사용일 시각화",
+          "category": "유틸"
+        },
+        {
+          "label": "/status",
+          "description": "버전, 모델, 계정, 연결 상태 표시",
+          "category": "유틸"
+        },
+        {
+          "label": "/doctor",
+          "description": "설치 및 설정 진단/검증",
+          "category": "유틸"
+        },
+        {
+          "label": "/debug",
+          "description": "디버그 모드 토글 (세션 중 전환 가능)",
+          "category": "유틸",
+          "isNew": true,
+          "addedVersion": "2.1.30"
+        },
+        {
+          "label": "/security-review",
+          "description": "현재 브랜치 변경사항 보안 취약점 분석",
+          "category": "유틸"
+        },
+        {
+          "label": "/pr-comments [PR]",
+          "description": "GitHub PR 댓글 가져오기. gh CLI 필요",
+          "category": "유틸"
+        },
+        {
+          "label": "/init",
+          "description": "CLAUDE.md 가이드로 프로젝트 초기화",
+          "category": "유틸"
+        },
+        {
+          "label": "/feedback [보고]",
+          "description": "피드백 제출. 별칭: /bug",
+          "category": "기타"
+        },
+        {
+          "label": "/help",
+          "description": "도움말 및 사용 가능한 명령어 표시",
+          "category": "기타"
+        },
+        {
+          "label": "/login · /logout",
+          "description": "Anthropic 계정 로그인/로그아웃",
+          "category": "기타"
+        },
+        {
+          "label": "/exit",
+          "description": "CLI 종료. 별칭: /quit",
+          "category": "기타"
+        },
+        {
+          "label": "/remote-control",
+          "description": "claude.ai에서 원격 제어 가능하게 설정. 별칭: /rc",
+          "category": "기타",
+          "isNew": true,
+          "addedVersion": "2.1.79"
+        },
+        {
+          "label": "/desktop",
+          "description": "Claude Code 데스크톱 앱에서 세션 계속. 별칭: /app",
+          "category": "기타"
+        },
+        {
+          "label": "/loop <간격> <프롬프트>",
+          "description": "반복 프롬프트 실행. 예: /loop 5m 배포 확인",
+          "category": "유틸",
+          "isNew": true,
+          "addedVersion": "2.1.71"
+        },
+        {
+          "label": "/schedule [설명]",
+          "description": "클라우드 예약 작업 생성/관리",
+          "category": "유틸",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "/insights",
+          "description": "세션 분석 리포트 생성 (사용 패턴, 마찰점 등)",
+          "category": "유틸"
+        },
+        {
+          "label": "/statusline",
+          "description": "상태 표시줄 설정",
+          "category": "설정"
+        },
+        {
+          "label": "/extra-usage",
+          "description": "속도 제한 시 추가 사용량 설정",
+          "category": "기타"
+        },
+        {
+          "label": "/stickers",
+          "description": "Claude Code 스티커 주문",
+          "category": "기타"
+        },
+        {
+          "label": "/release-notes",
+          "description": "전체 변경 로그 보기",
+          "category": "기타"
+        }
+      ]
+    },
+    {
+      "id": "bundled-skills",
+      "title": "번들 스킬",
+      "icon": "🎯",
+      "items": [
+        {
+          "label": "/simplify",
+          "description": "PR 전 품질 검사. 3-에이전트 리뷰 파이프라인으로 아키텍처 이슈, 중복 로직, 성능 비효율 감지",
+          "isNew": true,
+          "addedVersion": "2.1.63"
+        },
+        {
+          "label": "/batch",
+          "description": "대규모 변경을 병렬 워크트리에서 실행하고 자동으로 PR 생성. 마이그레이션에 적합",
+          "isNew": true,
+          "addedVersion": "2.1.63"
+        },
+        {
+          "label": "/claude-api",
+          "description": "Claude API/SDK 개발 지원 스킬",
+          "isNew": true,
+          "addedVersion": "2.1.69"
+        }
+      ]
+    },
+    {
+      "id": "quick-input",
+      "title": "빠른 입력",
+      "icon": "⚡",
+      "items": [
+        {
+          "label": "/ (줄 시작)",
+          "description": "슬래시 명령어 또는 스킬 실행"
+        },
+        {
+          "label": "! (줄 시작)",
+          "description": "Bash 모드 — Claude 해석 없이 직접 실행. Tab으로 자동완성"
+        },
+        {
+          "label": "@",
+          "description": "파일 경로 자동완성 트리거"
+        }
+      ]
+    },
+    {
+      "id": "cli-commands",
+      "title": "CLI 명령어",
+      "icon": "💻",
+      "items": [
+        {
+          "label": "claude",
+          "description": "대화형 세션 시작"
+        },
+        {
+          "label": "claude \"쿼리\"",
+          "description": "초기 프롬프트와 함께 대화형 세션 시작"
+        },
+        {
+          "label": "claude -p \"쿼리\"",
+          "description": "비대화형 모드. stdout 출력 후 종료 (파이프라인용)"
+        },
+        {
+          "label": "cat file | claude -p \"쿼리\"",
+          "description": "파이프된 콘텐츠 처리"
+        },
+        {
+          "label": "claude -c",
+          "description": "현재 디렉토리의 최근 대화 계속"
+        },
+        {
+          "label": "claude -r \"세션\" \"쿼리\"",
+          "description": "ID 또는 이름으로 세션 재개"
+        },
+        {
+          "label": "claude update",
+          "description": "최신 버전으로 업데이트"
+        },
+        {
+          "label": "claude auth login",
+          "description": "Anthropic 계정 로그인. --console로 API 빌링 인증"
+        },
+        {
+          "label": "claude auth status",
+          "description": "인증 상태 JSON 출력. --text로 텍스트 출력"
+        },
+        {
+          "label": "claude agents",
+          "description": "설정된 서브에이전트 목록 (소스별 그룹)",
+          "isNew": true,
+          "addedVersion": "2.1.50"
+        },
+        {
+          "label": "claude mcp",
+          "description": "MCP 서버 설정"
+        },
+        {
+          "label": "claude plugin",
+          "description": "플러그인 관리. 별칭: claude plugins"
+        },
+        {
+          "label": "claude remote-control",
+          "description": "원격 제어 서버 시작 (claude.ai에서 제어)",
+          "isNew": true,
+          "addedVersion": "2.1.51"
+        },
+        {
+          "label": "claude auto-mode defaults",
+          "description": "자동 모드 분류기 규칙 JSON 출력"
+        }
+      ]
+    },
+    {
+      "id": "cli-flags",
+      "title": "CLI 플래그",
+      "icon": "🚩",
+      "items": [
+        {
+          "label": "-p, --print",
+          "description": "비대화형 모드로 응답 출력 후 종료"
+        },
+        {
+          "label": "-c, --continue",
+          "description": "현재 디렉토리 최근 대화 로드"
+        },
+        {
+          "label": "-r, --resume <세션>",
+          "description": "특정 세션 ID 또는 이름으로 재개"
+        },
+        {
+          "label": "-n, --name <이름>",
+          "description": "세션 표시 이름 설정",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "-w, --worktree [이름]",
+          "description": "격리된 git 워크트리에서 시작",
+          "isNew": true,
+          "addedVersion": "2.1.49"
+        },
+        {
+          "label": "--bare",
+          "description": "최소 모드. 훅, 스킬, 플러그인, MCP 탐색 건너뜀",
+          "isNew": true,
+          "addedVersion": "2.1.81"
+        },
+        {
+          "label": "--model <모델>",
+          "description": "세션 모델 설정. sonnet, opus 또는 전체 이름"
+        },
+        {
+          "label": "--effort <수준>",
+          "description": "노력 수준 설정: low, medium, high, max(Opus만)"
+        },
+        {
+          "label": "--system-prompt <텍스트>",
+          "description": "전체 시스템 프롬프트를 사용자 지정 텍스트로 교체"
+        },
+        {
+          "label": "--append-system-prompt <텍스트>",
+          "description": "기본 프롬프트 끝에 사용자 지정 텍스트 추가"
+        },
+        {
+          "label": "--allowedTools <도구들>",
+          "description": "권한 확인 없이 실행할 도구 목록"
+        },
+        {
+          "label": "--disallowedTools <도구들>",
+          "description": "모델 컨텍스트에서 제거할 도구 목록"
+        },
+        {
+          "label": "--tools <도구들>",
+          "description": "사용 가능한 도구 제한. default, 또는 도구명 나열"
+        },
+        {
+          "label": "--mcp-config <경로>",
+          "description": "MCP 서버 JSON 파일에서 로드"
+        },
+        {
+          "label": "--add-dir <경로>",
+          "description": "추가 작업 디렉토리 지정"
+        },
+        {
+          "label": "--chrome / --no-chrome",
+          "description": "Chrome 브라우저 연동 활성화/비활성화"
+        },
+        {
+          "label": "--debug [카테고리]",
+          "description": "디버그 모드 활성화. 예: \"api,hooks\""
+        },
+        {
+          "label": "--verbose",
+          "description": "상세 로깅 활성화, 전체 턴별 출력"
+        },
+        {
+          "label": "--output-format <형식>",
+          "description": "출력 형식: text, json, stream-json (-p 모드)"
+        },
+        {
+          "label": "--json-schema <스키마>",
+          "description": "JSON Schema에 맞는 검증된 출력 (-p 모드)"
+        },
+        {
+          "label": "--max-turns <수>",
+          "description": "에이전트 턴 수 제한 (-p 모드)"
+        },
+        {
+          "label": "--max-budget-usd <금액>",
+          "description": "API 호출 최대 비용 제한 (-p 모드)"
+        },
+        {
+          "label": "--permission-mode <모드>",
+          "description": "지정된 권한 모드로 시작"
+        },
+        {
+          "label": "--dangerously-skip-permissions",
+          "description": "권한 프롬프트 건너뛰기 (주의!)"
+        },
+        {
+          "label": "--remote",
+          "description": "claude.ai에서 새 웹 세션 생성",
+          "isNew": true
+        },
+        {
+          "label": "--remote-control, --rc",
+          "description": "원격 제어 활성화된 대화형 세션 시작",
+          "isNew": true
+        },
+        {
+          "label": "--channels",
+          "description": "(연구 프리뷰) MCP 채널 알림 리슨",
+          "isNew": true,
+          "addedVersion": "2.1.80"
+        },
+        {
+          "label": "--plugin-dir <경로>",
+          "description": "디렉토리에서 플러그인 로드 (세션 한정)"
+        },
+        {
+          "label": "--fallback-model <모델>",
+          "description": "과부하 시 자동 폴백 모델 (-p 모드)"
+        },
+        {
+          "label": "-v, --version",
+          "description": "버전 번호 출력"
+        }
+      ]
+    },
+    {
+      "id": "env-vars",
+      "title": "환경 변수",
+      "icon": "🔧",
+      "items": [
+        {
+          "label": "ANTHROPIC_API_KEY",
+          "description": "API 키 (자동 감지 대신 사용)"
+        },
+        {
+          "label": "ANTHROPIC_BASE_URL",
+          "description": "API 프록시/게이트웨이 URL"
+        },
+        {
+          "label": "ANTHROPIC_MODEL",
+          "description": "사용할 모델 오버라이드"
+        },
+        {
+          "label": "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
+          "description": "최대 출력 토큰 수"
+        },
+        {
+          "label": "CLAUDE_CODE_DISABLE_BACKGROUND_TASKS",
+          "description": "백그라운드 작업 기능 비활성화 (=1)"
+        },
+        {
+          "label": "CLAUDE_CODE_DISABLE_CRON",
+          "description": "크론 기능 비활성화"
+        },
+        {
+          "label": "CLAUDE_CODE_DISABLE_GIT_INSTRUCTIONS",
+          "description": "시스템 프롬프트에서 git 섹션 제거"
+        },
+        {
+          "label": "CLAUDE_CODE_DISABLE_1M_CONTEXT",
+          "description": "1M 컨텍스트 비활성화"
+        },
+        {
+          "label": "CLAUDE_CODE_SIMPLE",
+          "description": "간단 모드 (--bare와 유사)"
+        },
+        {
+          "label": "CLAUDE_STREAM_IDLE_TIMEOUT_MS",
+          "description": "스트림 유휴 타임아웃 (기본 90초)",
+          "isNew": true,
+          "addedVersion": "2.1.84"
+        },
+        {
+          "label": "CLAUDE_CODE_SUBPROCESS_ENV_SCRUB",
+          "description": "하위 프로세스 자격증명 제거 (=1)",
+          "isNew": true,
+          "addedVersion": "2.1.83"
+        },
+        {
+          "label": "CLAUDE_CODE_ENABLE_PROMPT_SUGGESTION",
+          "description": "프롬프트 제안 활성화/비활성화 (=false)"
+        },
+        {
+          "label": "CLAUDE_CODE_TASK_LIST_ID",
+          "description": "세션 간 공유 작업 목록 ID"
+        },
+        {
+          "label": "CLAUDE_BASH_NO_LOGIN",
+          "description": "bash -l 플래그 건너뛰기"
+        },
+        {
+          "label": "ENABLE_TOOL_SEARCH",
+          "description": "도구 검색 기능 활성화"
+        },
+        {
+          "label": "ENABLE_CLAUDEAI_MCP_SERVERS",
+          "description": "claude.ai MCP 서버 활성화/비활성화 (=false)"
+        },
+        {
+          "label": "ANTHROPIC_CUSTOM_MODEL_OPTION",
+          "description": "커스텀 모델 항목 추가"
+        },
+        {
+          "label": "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS",
+          "description": "실험적 베타 헤더 억제"
+        }
+      ]
+    },
+    {
+      "id": "memory",
+      "title": "메모리 / CLAUDE.md",
+      "icon": "🧠",
+      "items": [
+        {
+          "label": "~/.claude/CLAUDE.md",
+          "description": "전역 메모리 — 모든 프로젝트에 적용"
+        },
+        {
+          "label": ".claude/CLAUDE.md (프로젝트 루트)",
+          "description": "프로젝트 메모리 — git 추적, 팀 공유용"
+        },
+        {
+          "label": ".claude/CLAUDE.local.md",
+          "description": "로컬 메모리 — gitignore됨, 개인 설정용"
+        },
+        {
+          "label": "자동 메모리 (Auto-memory)",
+          "description": "/memory로 관리. 자동으로 기억하고 회상",
+          "isNew": true,
+          "addedVersion": "2.1.59"
+        },
+        {
+          "label": "autoMemoryDirectory 설정",
+          "description": "자동 메모리 저장 디렉토리 커스텀",
+          "isNew": true,
+          "addedVersion": "2.1.74"
+        },
+        {
+          "label": "HTML 주석",
+          "description": "CLAUDE.md의 <!-- --> 주석은 숨겨지나 Read 도구로 볼 수 있음"
+        },
+        {
+          "label": "조건부 규칙 (paths: 프론트매터)",
+          "description": "YAML 글로브 목록으로 특정 경로에만 규칙 적용",
+          "isNew": true,
+          "addedVersion": "2.1.84"
+        }
+      ]
+    },
+    {
+      "id": "skills-system",
+      "title": "스킬 시스템",
+      "icon": "📦",
+      "items": [
+        {
+          "label": ".claude/skills/ 디렉토리",
+          "description": "스킬 = 프론트매터 기반 커스텀 명령어. 기존 .claude/commands/도 호환"
+        },
+        {
+          "label": "프론트매터 필드",
+          "description": "description, effort, model, maxTurns, disallowedTools, paths 등 지원"
+        },
+        {
+          "label": "자동 호출 제어",
+          "description": "프론트매터로 스킬 자동 호출 조건 설정 가능"
+        },
+        {
+          "label": "에이전트 프론트매터",
+          "description": "effort, maxTurns, disallowedTools, memory, initialPrompt, background 등",
+          "isNew": true,
+          "addedVersion": "2.1.78"
+        },
+        {
+          "label": "${CLAUDE_SKILL_DIR}",
+          "description": "스킬 내에서 스킬 디렉토리 참조 변수",
+          "isNew": true,
+          "addedVersion": "2.1.69"
+        },
+        {
+          "label": "스킬 캐릭터 예산",
+          "description": "컨텍스트 윈도우의 2%로 스케일"
+        }
+      ]
+    },
+    {
+      "id": "mcp-config",
+      "title": "MCP 설정",
+      "icon": "🔌",
+      "items": [
+        {
+          "label": "~/.claude/mcp.json",
+          "description": "전역 MCP 서버 설정"
+        },
+        {
+          "label": ".claude/mcp.json (프로젝트)",
+          "description": "프로젝트별 MCP 서버 설정"
+        },
+        {
+          "label": "claude mcp add <이름>",
+          "description": "MCP 서버 추가. --client-id/--client-secret 옵션"
+        },
+        {
+          "label": "MCP 도구 설명",
+          "description": "2KB 상한. 초과 시 잘림",
+          "isNew": true,
+          "addedVersion": "2.1.84"
+        },
+        {
+          "label": "MCP 서버 중복 제거",
+          "description": "로컬 설정이 우선",
+          "isNew": true,
+          "addedVersion": "2.1.84"
+        },
+        {
+          "label": "MCP OAuth",
+          "description": "oauth.authServerMetadataUrl 지원. 수동 URL 붙여넣기 폴백"
+        },
+        {
+          "label": "MCP Elicitation",
+          "description": "대화형 폼/다이얼로그 지원. Elicitation 훅",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "MCP 프롬프트",
+          "description": "/mcp__<서버>__<프롬프트> 형식으로 MCP 프롬프트를 명령어로 사용"
+        }
+      ]
+    },
+    {
+      "id": "hooks",
+      "title": "훅 이벤트",
+      "icon": "🪝",
+      "items": [
+        {
+          "label": "PreToolUse / PostToolUse",
+          "description": "도구 실행 전/후 훅"
+        },
+        {
+          "label": "SessionStart / SessionEnd",
+          "description": "세션 시작/종료 시. SessionEnd 타임아웃 환경변수 설정 가능"
+        },
+        {
+          "label": "TaskCreated",
+          "description": "작업 생성 시",
+          "isNew": true,
+          "addedVersion": "2.1.84"
+        },
+        {
+          "label": "CwdChanged / FileChanged",
+          "description": "작업 디렉토리/파일 변경 시",
+          "isNew": true,
+          "addedVersion": "2.1.83"
+        },
+        {
+          "label": "StopFailure",
+          "description": "중지 실패 시",
+          "isNew": true,
+          "addedVersion": "2.1.78"
+        },
+        {
+          "label": "PostCompact",
+          "description": "대화 압축 후",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "InstructionsLoaded",
+          "description": "명령어 로드 시",
+          "isNew": true,
+          "addedVersion": "2.1.69"
+        },
+        {
+          "label": "Elicitation / ElicitationResult",
+          "description": "MCP 대화형 폼 이벤트",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "TeammateIdle / TaskCompleted",
+          "description": "에이전트 팀 유휴/작업 완료 이벤트",
+          "isNew": true,
+          "addedVersion": "2.1.33"
+        },
+        {
+          "label": "WorktreeCreate / WorktreeRemove",
+          "description": "워크트리 생성/제거 시. HTTP 훅 지원",
+          "isNew": true,
+          "addedVersion": "2.1.50"
+        },
+        {
+          "label": "HTTP 훅 (type: \"http\")",
+          "description": "POST/JSON 수신 가능한 HTTP 훅 지원",
+          "isNew": true,
+          "addedVersion": "2.1.63"
+        }
+      ]
+    },
+    {
+      "id": "settings-config",
+      "title": "설정 파일",
+      "icon": "⚙️",
+      "items": [
+        {
+          "label": "~/.claude/settings.json",
+          "description": "사용자 전역 설정"
+        },
+        {
+          "label": ".claude/settings.json (프로젝트)",
+          "description": "프로젝트별 설정 (git 추적)"
+        },
+        {
+          "label": ".claude/settings.local.json",
+          "description": "로컬 설정 (gitignore됨)"
+        },
+        {
+          "label": "managed-settings.json",
+          "description": "조직 관리형 설정 (Enterprise)"
+        },
+        {
+          "label": "managed-settings.d/ 디렉토리",
+          "description": "정책 프래그먼트 드롭인 디렉토리",
+          "isNew": true,
+          "addedVersion": "2.1.83"
+        },
+        {
+          "label": "keybindings.json",
+          "description": "키바인딩 커스텀 설정 (/keybindings로 열기)"
+        },
+        {
+          "label": "modelOverrides",
+          "description": "모델 선택기 항목을 커스텀 제공자 ID로 매핑",
+          "isNew": true,
+          "addedVersion": "2.1.73"
+        },
+        {
+          "label": "worktree.sparsePaths",
+          "description": "모노레포용 sparse-checkout 경로 설정",
+          "isNew": true,
+          "addedVersion": "2.1.76"
+        },
+        {
+          "label": "sandbox.failIfUnavailable",
+          "description": "샌드박스 사용 불가 시 실패 설정",
+          "isNew": true,
+          "addedVersion": "2.1.83"
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "title": "모델",
+      "icon": "🤖",
+      "items": [
+        {
+          "label": "Claude Opus 4.6",
+          "description": "최상위 프론티어 모델. 기본 medium effort. 1M 컨텍스트 (Max/Team/Enterprise)",
+          "isNew": true,
+          "addedVersion": "2.1.32"
+        },
+        {
+          "label": "Claude Sonnet 4.6",
+          "description": "빠르고 효율적. 1M 컨텍스트. 기본 64k 출력, 최대 128k",
+          "isNew": true,
+          "addedVersion": "2.1.45"
+        },
+        {
+          "label": "Claude Haiku 4.5",
+          "description": "가장 빠른 응답"
+        },
+        {
+          "label": "노력 수준",
+          "description": "low / medium / high / max(Opus 전용) / auto. /effort 또는 --effort로 설정"
+        },
+        {
+          "label": "패스트 모드",
+          "description": "Sonnet으로 빠른 응답. Option+O / Alt+O 또는 /fast로 전환"
+        }
+      ]
+    },
+    {
+      "id": "vim-mode",
+      "title": "Vim 모드",
+      "icon": "📝",
+      "items": [
+        {
+          "label": "활성화",
+          "description": "/vim 또는 /config에서 설정"
+        },
+        {
+          "label": "모드 전환",
+          "description": "Esc→NORMAL, i/I/a/A/o/O→INSERT"
+        },
+        {
+          "label": "이동",
+          "description": "h/j/k/l, w/e/b, 0/$, gg/G, f/F/t/T{문자}"
+        },
+        {
+          "label": "편집",
+          "description": "x, dd/D, dw/de/db, cc/C, cw/ce/cb, yy/Y, p/P, >>/<<, J, ."
+        },
+        {
+          "label": "텍스트 객체",
+          "description": "iw/aw, iW/aW, i\"/a\", i'/a', i(/a(, i[/a[, i{/a{"
+        }
+      ]
+    },
+    {
+      "id": "agent-teams",
+      "title": "에이전트 팀",
+      "icon": "👥",
+      "items": [
+        {
+          "label": "연구 프리뷰",
+          "description": "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1로 활성화",
+          "isNew": true,
+          "addedVersion": "2.1.32"
+        },
+        {
+          "label": "--teammate-mode",
+          "description": "auto(기본), in-process, tmux 모드 선택"
+        },
+        {
+          "label": "background: true",
+          "description": "에이전트를 항상 백그라운드로 실행"
+        },
+        {
+          "label": "isolation: \"worktree\"",
+          "description": "에이전트를 격리된 git 워크트리에서 실행"
+        }
+      ]
+    },
+    {
+      "id": "plugins",
+      "title": "플러그인",
+      "icon": "🧩",
+      "items": [
+        {
+          "label": "claude plugin install <이름>",
+          "description": "플러그인 설치. 예: code-review@claude-code-marketplace"
+        },
+        {
+          "label": "claude plugin validate",
+          "description": "플러그인 유효성 검사"
+        },
+        {
+          "label": "마켓플레이스",
+          "description": "/plugin marketplace로 탐색 및 업데이트"
+        },
+        {
+          "label": "플러그인 settings.json",
+          "description": "플러그인이 기본 설정 제공 가능",
+          "isNew": true,
+          "addedVersion": "2.1.49"
+        },
+        {
+          "label": "${CLAUDE_PLUGIN_DATA}",
+          "description": "플러그인 영속 상태 저장 변수",
+          "isNew": true,
+          "addedVersion": "2.1.78"
+        }
+      ]
+    }
+  ]
+}

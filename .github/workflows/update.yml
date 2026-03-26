@@ -1,0 +1,65 @@
+name: 치트시트 자동 업데이트
+
+on:
+  schedule:
+    # 매일 오전 9시 KST (= UTC 0시)
+    - cron: "0 0 * * *"
+  workflow_dispatch: # 수동 실행 가능
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  check-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 리포지토리 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Node.js 설정
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 업데이트 스크립트 실행
+        id: update
+        run: node scripts/update.js
+
+      - name: 변경사항 확인 및 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          if git diff --cached --quiet; then
+            echo "변경사항 없음. 스킵합니다."
+          else
+            VERSION=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data.json','utf8')).meta.version)")
+            git commit -m "chore: v${VERSION}으로 자동 업데이트"
+            git push
+          fi
+
+  deploy:
+    needs: check-update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 리포지토리 체크아웃
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: GitHub Pages 설정
+        uses: actions/configure-pages@v4
+
+      - name: 아티팩트 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: GitHub Pages 배포
+        id: deployment
+        uses: actions/deploy-pages@v4
