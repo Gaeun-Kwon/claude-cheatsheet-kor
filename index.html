@@ -63,8 +63,8 @@ body{font-family:'SF Mono','Fira Code','Noto Sans KR',system-ui,sans-serif;backg
 /* Print — A4 가로 한 장 */
 @media print{
   @page{size:A4 landscape;margin:3mm}
-  html,body{width:297mm;height:210mm;overflow:hidden !important;background:#fff !important}
-  body{font-size:6.5px;line-height:1.2;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html{height:auto;overflow:visible}
+  body{background:#fff !important;font-size:6.5px;line-height:1.2;-webkit-print-color-adjust:exact;print-color-adjust:exact;margin:0;padding:0}
   .hdr{padding:2px 6px;border-bottom:1px solid #999}
   .hdr-title{font-size:10px}
   .hdr-ver{font-size:7px}
@@ -75,7 +75,7 @@ body{font-family:'SF Mono','Fira Code','Noto Sans KR',system-ui,sans-serif;backg
   .banner .items{gap:0 8px}
   .grid{display:flex !important;flex-direction:row !important;flex-wrap:nowrap !important;padding:1px 1px 0;gap:0;width:100%}
   .col{flex:1 1 0 !important;min-width:0 !important;max-width:20% !important;padding:0 1px !important;overflow:hidden}
-  .sec{margin-bottom:2px;page-break-inside:avoid;break-inside:avoid}
+  .sec{margin-bottom:2px}
   .sec-hdr{padding:1px 3px;font-size:6px;border-radius:1px 1px 0 0;letter-spacing:0}
   .sec-body{padding:0;border-radius:0 0 1px 1px;border-width:0.5px}
   .grp-name{font-size:5.5px;padding:1px 3px 0;letter-spacing:0}
