@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "2.1.84",
-    "lastUpdated": "2026-03-26",
+    "version": "2.1.85",
+    "lastUpdated": "2026-03-27",
     "changelogUrl": "https://code.claude.com/docs/en/changelog",
     "newBadgeDays": 14,
     "recentChanges": [
@@ -24,19 +24,43 @@
             {
               "name": "일반 제어",
               "items": [
-                { "keys": "Ctrl C", "desc": "입력/생성 취소" },
-                { "keys": "Ctrl D", "desc": "세션 종료" },
-                { "keys": "Ctrl L", "desc": "터미널 화면 클리어" },
-                { "keys": "Ctrl O", "desc": "상세 출력 토글" },
-                { "keys": "Ctrl R", "desc": "명령 히스토리 검색" },
-                { "keys": "Ctrl G", "desc": "외부 에디터에서 프롬프트 편집" },
+                {
+                  "keys": "Ctrl C",
+                  "desc": "입력/생성 취소"
+                },
+                {
+                  "keys": "Ctrl D",
+                  "desc": "세션 종료"
+                },
+                {
+                  "keys": "Ctrl L",
+                  "desc": "터미널 화면 클리어"
+                },
+                {
+                  "keys": "Ctrl O",
+                  "desc": "상세 출력 토글"
+                },
+                {
+                  "keys": "Ctrl R",
+                  "desc": "명령 히스토리 검색"
+                },
+                {
+                  "keys": "Ctrl G",
+                  "desc": "외부 에디터에서 프롬프트 편집"
+                },
                 {
                   "keys": "Ctrl X|Ctrl E",
                   "desc": "에디터 열기 (별칭)",
                   "isNew": true
                 },
-                { "keys": "Ctrl B", "desc": "작업 백그라운드 전환" },
-                { "keys": "Ctrl T", "desc": "작업 목록 토글" },
+                {
+                  "keys": "Ctrl B",
+                  "desc": "작업 백그라운드 전환"
+                },
+                {
+                  "keys": "Ctrl T",
+                  "desc": "작업 목록 토글"
+                },
                 {
                   "keys_mac": "Ctrl V / Cmd V",
                   "keys_win": "Ctrl V",
@@ -57,7 +81,11 @@
                   "keys_win": "Shift Tab",
                   "desc": "권한 모드 순환"
                 },
-                { "keys_mac": "⌥ P", "keys_win": "Alt P", "desc": "모델 전환" },
+                {
+                  "keys_mac": "⌥ P",
+                  "keys_win": "Alt P",
+                  "desc": "모델 전환"
+                },
                 {
                   "keys_mac": "⌥ T",
                   "keys_win": "Alt T",
@@ -68,33 +96,74 @@
             {
               "name": "입력",
               "items": [
-                { "keys": "\\ Enter", "desc": "줄바꿈 (빠른)" },
-                { "keys": "Ctrl J", "desc": "줄바꿈 (제어 시퀀스)" }
+                {
+                  "keys": "\\ Enter",
+                  "desc": "줄바꿈 (빠른)"
+                },
+                {
+                  "keys": "Ctrl J",
+                  "desc": "줄바꿈 (제어 시퀀스)"
+                }
               ]
             },
             {
               "name": "접두사",
               "items": [
-                { "keys": "/", "desc": "슬래시 명령어" },
-                { "keys": "!", "desc": "직접 bash 실행" },
-                { "keys": "@", "desc": "파일 멘션 + 자동완성" }
+                {
+                  "keys": "/",
+                  "desc": "슬래시 명령어"
+                },
+                {
+                  "keys": "!",
+                  "desc": "직접 bash 실행"
+                },
+                {
+                  "keys": "@",
+                  "desc": "파일 멘션 + 자동완성"
+                }
               ]
             },
             {
               "name": "세션 선택기",
               "items": [
-                { "keys": "↑↓", "desc": "탐색" },
-                { "keys": "←→", "desc": "확장/축소" },
-                { "keys": "P", "desc": "미리보기" },
-                { "keys": "R", "desc": "이름 변경" },
-                { "keys": "/", "desc": "검색" },
-                { "keys": "A", "desc": "전체 프로젝트" },
-                { "keys": "B", "desc": "현재 브랜치" }
+                {
+                  "keys": "↑↓",
+                  "desc": "탐색"
+                },
+                {
+                  "keys": "←→",
+                  "desc": "확장/축소"
+                },
+                {
+                  "keys": "P",
+                  "desc": "미리보기"
+                },
+                {
+                  "keys": "R",
+                  "desc": "이름 변경"
+                },
+                {
+                  "keys": "/",
+                  "desc": "검색"
+                },
+                {
+                  "keys": "A",
+                  "desc": "전체 프로젝트"
+                },
+                {
+                  "keys": "B",
+                  "desc": "현재 브랜치"
+                }
               ]
             },
             {
               "name": "되감기",
-              "items": [{ "keys": "Esc Esc", "desc": "되감기 / 실행취소" }]
+              "items": [
+                {
+                  "keys": "Esc Esc",
+                  "desc": "되감기 / 실행취소"
+                }
+              ]
             }
           ]
         },
@@ -106,17 +175,35 @@
             {
               "name": "서버 추가",
               "items": [
-                { "cmd": "--transport http", "desc": "원격 HTTP (권장)" },
-                { "cmd": "--transport stdio", "desc": "로컬 프로세스" },
-                { "cmd": "--transport sse", "desc": "원격 SSE" }
+                {
+                  "cmd": "--transport http",
+                  "desc": "원격 HTTP (권장)"
+                },
+                {
+                  "cmd": "--transport stdio",
+                  "desc": "로컬 프로세스"
+                },
+                {
+                  "cmd": "--transport sse",
+                  "desc": "원격 SSE"
+                }
               ]
             },
             {
               "name": "스코프",
               "items": [
-                { "cmd": "Local", "desc": "settings.local.json (나만 사용)" },
-                { "cmd": "Project", "desc": ".claude/mcp.json (팀 공유)" },
-                { "cmd": "User", "desc": "~/.claude/mcp.json (전역)" }
+                {
+                  "cmd": "Local",
+                  "desc": "settings.local.json (나만 사용)"
+                },
+                {
+                  "cmd": "Project",
+                  "desc": ".claude/mcp.json (팀 공유)"
+                },
+                {
+                  "cmd": "User",
+                  "desc": "~/.claude/mcp.json (전역)"
+                }
               ]
             },
             {
@@ -157,28 +244,79 @@
             {
               "name": "세션",
               "items": [
-                { "cmd": "/clear", "desc": "대화 초기화" },
-                { "cmd": "/compact [초점]", "desc": "컨텍스트 압축" },
-                { "cmd": "/resume", "desc": "세션 재개/전환" },
-                { "cmd": "/rename [이름]", "desc": "현재 세션 이름 지정" },
-                { "cmd": "/branch [이름]", "desc": "대화 분기 (별칭: /fork)" },
-                { "cmd": "/cost", "desc": "토큰 사용 통계" },
-                { "cmd": "/context", "desc": "컨텍스트 사용량 (그리드)" },
-                { "cmd": "/diff", "desc": "인터랙티브 diff 뷰어" },
-                { "cmd": "/rewind", "desc": "되감기 / 코드 체크포인트" },
-                { "cmd": "/copy [N]", "desc": "마지막(N번째) 응답 복사" },
-                { "cmd": "/export", "desc": "대화 내보내기" }
+                {
+                  "cmd": "/clear",
+                  "desc": "대화 초기화"
+                },
+                {
+                  "cmd": "/compact [초점]",
+                  "desc": "컨텍스트 압축"
+                },
+                {
+                  "cmd": "/resume",
+                  "desc": "세션 재개/전환"
+                },
+                {
+                  "cmd": "/rename [이름]",
+                  "desc": "현재 세션 이름 지정"
+                },
+                {
+                  "cmd": "/branch [이름]",
+                  "desc": "대화 분기 (별칭: /fork)"
+                },
+                {
+                  "cmd": "/cost",
+                  "desc": "토큰 사용 통계"
+                },
+                {
+                  "cmd": "/context",
+                  "desc": "컨텍스트 사용량 (그리드)"
+                },
+                {
+                  "cmd": "/diff",
+                  "desc": "인터랙티브 diff 뷰어"
+                },
+                {
+                  "cmd": "/rewind",
+                  "desc": "되감기 / 코드 체크포인트"
+                },
+                {
+                  "cmd": "/copy [N]",
+                  "desc": "마지막(N번째) 응답 복사"
+                },
+                {
+                  "cmd": "/export",
+                  "desc": "대화 내보내기"
+                }
               ]
             },
             {
               "name": "설정",
               "items": [
-                { "cmd": "/config", "desc": "설정 열기" },
-                { "cmd": "/model [모델]", "desc": "모델 전환 (←→ effort)" },
-                { "cmd": "/fast [on|off]", "desc": "패스트 모드 전환" },
-                { "cmd": "/vim", "desc": "vim 모드 전환" },
-                { "cmd": "/theme", "desc": "컬러 테마 변경" },
-                { "cmd": "/permissions", "desc": "권한 보기/수정" },
+                {
+                  "cmd": "/config",
+                  "desc": "설정 열기"
+                },
+                {
+                  "cmd": "/model [모델]",
+                  "desc": "모델 전환 (←→ effort)"
+                },
+                {
+                  "cmd": "/fast [on|off]",
+                  "desc": "패스트 모드 전환"
+                },
+                {
+                  "cmd": "/vim",
+                  "desc": "vim 모드 전환"
+                },
+                {
+                  "cmd": "/theme",
+                  "desc": "컬러 테마 변경"
+                },
+                {
+                  "cmd": "/permissions",
+                  "desc": "권한 보기/수정"
+                },
                 {
                   "cmd": "/effort [수준]",
                   "desc": "low/med/high/max/auto",
@@ -189,26 +327,56 @@
                   "desc": "프롬프트 바 색상",
                   "isNew": true
                 },
-                { "cmd": "/keybindings", "desc": "키보드 단축키 커스텀" },
-                { "cmd": "/terminal-setup", "desc": "터미널 키바인딩 설정" }
+                {
+                  "cmd": "/keybindings",
+                  "desc": "키보드 단축키 커스텀"
+                },
+                {
+                  "cmd": "/terminal-setup",
+                  "desc": "터미널 키바인딩 설정"
+                }
               ]
             },
             {
               "name": "도구",
               "items": [
-                { "cmd": "/init", "desc": "CLAUDE.md 생성" },
-                { "cmd": "/memory", "desc": "CLAUDE.md 파일 편집" },
-                { "cmd": "/mcp", "desc": "MCP 서버 관리" },
-                { "cmd": "/hooks", "desc": "훅 설정 보기" },
-                { "cmd": "/skills", "desc": "사용 가능한 스킬 목록" },
-                { "cmd": "/agents", "desc": "에이전트 관리" },
-                { "cmd": "/chrome", "desc": "Chrome 연동" },
+                {
+                  "cmd": "/init",
+                  "desc": "CLAUDE.md 생성"
+                },
+                {
+                  "cmd": "/memory",
+                  "desc": "CLAUDE.md 파일 편집"
+                },
+                {
+                  "cmd": "/mcp",
+                  "desc": "MCP 서버 관리"
+                },
+                {
+                  "cmd": "/hooks",
+                  "desc": "훅 설정 보기"
+                },
+                {
+                  "cmd": "/skills",
+                  "desc": "사용 가능한 스킬 목록"
+                },
+                {
+                  "cmd": "/agents",
+                  "desc": "에이전트 관리"
+                },
+                {
+                  "cmd": "/chrome",
+                  "desc": "Chrome 연동"
+                },
                 {
                   "cmd": "/reload-plugins",
                   "desc": "플러그인 핫 리로드",
                   "isNew": true
                 },
-                { "cmd": "/add-dir <경로>", "desc": "작업 디렉토리 추가" }
+                {
+                  "cmd": "/add-dir <경로>",
+                  "desc": "작업 디렉토리 추가"
+                }
               ]
             },
             {
@@ -218,7 +386,10 @@
                   "cmd": "/btw <질문>",
                   "desc": "사이드 질문 (컨텍스트 무영향)"
                 },
-                { "cmd": "/plan [설명]", "desc": "플랜 모드 (+ 자동 시작)" },
+                {
+                  "cmd": "/plan [설명]",
+                  "desc": "플랜 모드 (+ 자동 시작)"
+                },
                 {
                   "cmd": "/loop [간격] msg",
                   "desc": "반복 실행 작업",
@@ -229,11 +400,26 @@
                   "desc": "푸시투톡 음성 (20개 언어)",
                   "isNew": true
                 },
-                { "cmd": "/doctor", "desc": "설치 진단" },
-                { "cmd": "/pr-comments [PR]", "desc": "GitHub PR 댓글" },
-                { "cmd": "/stats", "desc": "사용량 스트릭 및 통계" },
-                { "cmd": "/insights", "desc": "세션 분석 리포트" },
-                { "cmd": "/desktop", "desc": "Desktop 앱에서 이어하기" },
+                {
+                  "cmd": "/doctor",
+                  "desc": "설치 진단"
+                },
+                {
+                  "cmd": "/pr-comments [PR]",
+                  "desc": "GitHub PR 댓글"
+                },
+                {
+                  "cmd": "/stats",
+                  "desc": "사용량 스트릭 및 통계"
+                },
+                {
+                  "cmd": "/insights",
+                  "desc": "세션 분석 리포트"
+                },
+                {
+                  "cmd": "/desktop",
+                  "desc": "Desktop 앱에서 이어하기"
+                },
                 {
                   "cmd": "/remote-control",
                   "desc": "claude.ai 원격 제어",
@@ -255,8 +441,14 @@
             {
               "name": "플랜 모드",
               "items": [
-                { "keys": "⇧ Tab", "desc": "Normal → Auto-Accept → Plan" },
-                { "cmd": "--permission-mode plan", "desc": "플랜 모드로 시작" }
+                {
+                  "keys": "⇧ Tab",
+                  "desc": "Normal → Auto-Accept → Plan"
+                },
+                {
+                  "cmd": "--permission-mode plan",
+                  "desc": "플랜 모드로 시작"
+                }
               ]
             },
             {
@@ -271,7 +463,10 @@
                   "cmd": "\"ultrathink\"",
                   "desc": "프롬프트에 입력 → high effort"
                 },
-                { "keys": "Ctrl O", "desc": "사고 과정 보기 (verbose)" },
+                {
+                  "keys": "Ctrl O",
+                  "desc": "사고 과정 보기 (verbose)"
+                },
                 {
                   "cmd": "/effort",
                   "desc": "○ low · ◉ med · ● high",
@@ -282,7 +477,10 @@
             {
               "name": "Git 워크트리",
               "items": [
-                { "cmd": "--worktree 이름", "desc": "기능별 격리 브랜치" },
+                {
+                  "cmd": "--worktree 이름",
+                  "desc": "기능별 격리 브랜치"
+                },
                 {
                   "cmd": "isolation: worktree",
                   "desc": "에이전트를 워크트리에서"
@@ -292,42 +490,90 @@
                   "desc": "필요한 디렉토리만 체크아웃",
                   "isNew": true
                 },
-                { "cmd": "/batch", "desc": "워크트리 자동 생성 병렬 처리" }
+                {
+                  "cmd": "/batch",
+                  "desc": "워크트리 자동 생성 병렬 처리"
+                }
               ]
             },
             {
               "name": "음성 모드",
               "items": [
-                { "cmd": "/voice", "desc": "푸시투톡 활성화" },
-                { "keys": "Space (길게)", "desc": "녹음, 떼면 전송" },
-                { "cmd": "20개 언어", "desc": "EN, ES, FR, DE, CZ, PL…" }
+                {
+                  "cmd": "/voice",
+                  "desc": "푸시투톡 활성화"
+                },
+                {
+                  "keys": "Space (길게)",
+                  "desc": "녹음, 떼면 전송"
+                },
+                {
+                  "cmd": "20개 언어",
+                  "desc": "EN, ES, FR, DE, CZ, PL…"
+                }
               ]
             },
             {
               "name": "컨텍스트 관리",
               "items": [
-                { "cmd": "/context", "desc": "사용량 + 최적화 팁" },
-                { "cmd": "/compact [초점]", "desc": "초점 맞춰 압축" },
-                { "cmd": "자동 압축", "desc": "~95% 용량에서 자동 실행" },
-                { "cmd": "1M 컨텍스트", "desc": "Opus 4.6 (Max/Team/Ent)" },
-                { "cmd": "CLAUDE.md", "desc": "압축 후에도 유지됨!" }
+                {
+                  "cmd": "/context",
+                  "desc": "사용량 + 최적화 팁"
+                },
+                {
+                  "cmd": "/compact [초점]",
+                  "desc": "초점 맞춰 압축"
+                },
+                {
+                  "cmd": "자동 압축",
+                  "desc": "~95% 용량에서 자동 실행"
+                },
+                {
+                  "cmd": "1M 컨텍스트",
+                  "desc": "Opus 4.6 (Max/Team/Ent)"
+                },
+                {
+                  "cmd": "CLAUDE.md",
+                  "desc": "압축 후에도 유지됨!"
+                }
               ]
             },
             {
               "name": "세션 파워 무브",
               "items": [
-                { "cmd": "claude -c", "desc": "마지막 대화 이어하기" },
-                { "cmd": "claude -r \"이름\"", "desc": "이름으로 재개" },
-                { "cmd": "/btw 질문", "desc": "사이드 Q, 컨텍스트 비용 0" }
+                {
+                  "cmd": "claude -c",
+                  "desc": "마지막 대화 이어하기"
+                },
+                {
+                  "cmd": "claude -r \"이름\"",
+                  "desc": "이름으로 재개"
+                },
+                {
+                  "cmd": "/btw 질문",
+                  "desc": "사이드 Q, 컨텍스트 비용 0"
+                }
               ]
             },
             {
               "name": "SDK / 헤드리스",
               "items": [
-                { "cmd": "claude -p \"쿼리\"", "desc": "비대화형 모드" },
-                { "cmd": "--output-format json", "desc": "구조화 출력" },
-                { "cmd": "--max-budget-usd 5", "desc": "비용 상한" },
-                { "cmd": "cat file | claude -p", "desc": "파이프 입력" }
+                {
+                  "cmd": "claude -p \"쿼리\"",
+                  "desc": "비대화형 모드"
+                },
+                {
+                  "cmd": "--output-format json",
+                  "desc": "구조화 출력"
+                },
+                {
+                  "cmd": "--max-budget-usd 5",
+                  "desc": "비용 상한"
+                },
+                {
+                  "cmd": "cat file | claude -p",
+                  "desc": "파이프 입력"
+                }
               ]
             },
             {
@@ -338,8 +584,14 @@
                   "desc": "반복 실행 작업",
                   "isNew": true
                 },
-                { "cmd": "/rc", "desc": "원격 제어" },
-                { "cmd": "--remote", "desc": "claude.ai 웹 세션" }
+                {
+                  "cmd": "/rc",
+                  "desc": "원격 제어"
+                },
+                {
+                  "cmd": "--remote",
+                  "desc": "claude.ai 웹 세션"
+                }
               ]
             }
           ]
@@ -356,9 +608,18 @@
             {
               "name": "번들 스킬",
               "items": [
-                { "cmd": "/simplify", "desc": "코드 리뷰 (3 병렬 에이전트)" },
-                { "cmd": "/batch", "desc": "대규모 병렬 변경 (5~30 워크트리)" },
-                { "cmd": "/debug [desc]", "desc": "디버그 로그 분석" },
+                {
+                  "cmd": "/simplify",
+                  "desc": "코드 리뷰 (3 병렬 에이전트)"
+                },
+                {
+                  "cmd": "/batch",
+                  "desc": "대규모 병렬 변경 (5~30 워크트리)"
+                },
+                {
+                  "cmd": "/debug [desc]",
+                  "desc": "디버그 로그 분석"
+                },
                 {
                   "cmd": "/loop [간격]",
                   "desc": "반복 예약 작업",
@@ -374,23 +635,44 @@
             {
               "name": "커스텀 스킬 위치",
               "items": [
-                { "cmd": ".claude/skills/<이름>/", "desc": "프로젝트 스킬" },
-                { "cmd": "~/.claude/skills/<이름>/", "desc": "개인 스킬" }
+                {
+                  "cmd": ".claude/skills/<이름>/",
+                  "desc": "프로젝트 스킬"
+                },
+                {
+                  "cmd": "~/.claude/skills/<이름>/",
+                  "desc": "개인 스킬"
+                }
               ]
             },
             {
               "name": "스킬 프론트매터",
               "items": [
-                { "cmd": "description", "desc": "자동 호출 트리거" },
-                { "cmd": "allowed-tools", "desc": "권한 프롬프트 건너뛰기" },
-                { "cmd": "model", "desc": "모델 오버라이드" },
+                {
+                  "cmd": "description",
+                  "desc": "자동 호출 트리거"
+                },
+                {
+                  "cmd": "allowed-tools",
+                  "desc": "권한 프롬프트 건너뛰기"
+                },
+                {
+                  "cmd": "model",
+                  "desc": "모델 오버라이드"
+                },
                 {
                   "cmd": "effort",
                   "desc": "노력 수준 오버라이드",
                   "isNew": true
                 },
-                { "cmd": "context: fork", "desc": "서브에이전트에서 실행" },
-                { "cmd": "$ARGUMENTS", "desc": "사용자 입력 플레이스홀더" },
+                {
+                  "cmd": "context: fork",
+                  "desc": "서브에이전트에서 실행"
+                },
+                {
+                  "cmd": "$ARGUMENTS",
+                  "desc": "사용자 입력 플레이스홀더"
+                },
                 {
                   "cmd": "${CLAUDE_SKILL_DIR}",
                   "desc": "스킬 자체 디렉토리",
@@ -401,10 +683,22 @@
             {
               "name": "빌트인 에이전트",
               "items": [
-                { "cmd": "Explore", "desc": "빠른 읽기 전용 (Haiku)" },
-                { "cmd": "Plan", "desc": "플랜 모드 연구용" },
-                { "cmd": "General", "desc": "전체 도구, 복잡한 작업" },
-                { "cmd": "Bash", "desc": "터미널 별도 컨텍스트" }
+                {
+                  "cmd": "Explore",
+                  "desc": "빠른 읽기 전용 (Haiku)"
+                },
+                {
+                  "cmd": "Plan",
+                  "desc": "플랜 모드 연구용"
+                },
+                {
+                  "cmd": "General",
+                  "desc": "전체 도구, 복잡한 작업"
+                },
+                {
+                  "cmd": "Bash",
+                  "desc": "터미널 별도 컨텍스트"
+                }
               ]
             },
             {
@@ -418,9 +712,18 @@
                   "cmd": "isolation: worktree",
                   "desc": "git 워크트리에서 실행"
                 },
-                { "cmd": "memory: user|project", "desc": "영속 메모리" },
-                { "cmd": "background: true", "desc": "백그라운드 작업" },
-                { "cmd": "maxTurns", "desc": "에이전트 턴 수 제한" },
+                {
+                  "cmd": "memory: user|project",
+                  "desc": "영속 메모리"
+                },
+                {
+                  "cmd": "background: true",
+                  "desc": "백그라운드 작업"
+                },
+                {
+                  "cmd": "maxTurns",
+                  "desc": "에이전트 턴 수 제한"
+                },
                 {
                   "cmd": "SendMessage",
                   "desc": "에이전트 재개 (resume 대체)",
@@ -438,39 +741,96 @@
             {
               "name": "핵심 명령어",
               "items": [
-                { "cmd": "claude", "desc": "대화형 세션" },
-                { "cmd": "claude \"q\"", "desc": "프롬프트와 시작" },
-                { "cmd": "claude -p \"q\"", "desc": "헤드리스 모드" },
-                { "cmd": "claude -c", "desc": "마지막 대화 계속" },
-                { "cmd": "claude -r \"n\"", "desc": "세션 재개" },
-                { "cmd": "claude update", "desc": "업데이트" }
+                {
+                  "cmd": "claude",
+                  "desc": "대화형 세션"
+                },
+                {
+                  "cmd": "claude \"q\"",
+                  "desc": "프롬프트와 시작"
+                },
+                {
+                  "cmd": "claude -p \"q\"",
+                  "desc": "헤드리스 모드"
+                },
+                {
+                  "cmd": "claude -c",
+                  "desc": "마지막 대화 계속"
+                },
+                {
+                  "cmd": "claude -r \"n\"",
+                  "desc": "세션 재개"
+                },
+                {
+                  "cmd": "claude update",
+                  "desc": "업데이트"
+                }
               ]
             },
             {
               "name": "주요 플래그",
               "items": [
-                { "cmd": "--model", "desc": "모델 설정" },
-                { "cmd": "-w", "desc": "git 워크트리", "isNew": true },
-                { "cmd": "-n / --name", "desc": "세션 이름", "isNew": true },
-                { "cmd": "--add-dir", "desc": "디렉토리 추가" },
+                {
+                  "cmd": "--model",
+                  "desc": "모델 설정"
+                },
+                {
+                  "cmd": "-w",
+                  "desc": "git 워크트리",
+                  "isNew": true
+                },
+                {
+                  "cmd": "-n / --name",
+                  "desc": "세션 이름",
+                  "isNew": true
+                },
+                {
+                  "cmd": "--add-dir",
+                  "desc": "디렉토리 추가"
+                },
                 {
                   "cmd": "--bare",
                   "desc": "최소 모드 (훅/스킬 건너뜀)",
                   "isNew": true
                 },
-                { "cmd": "--allowedTools", "desc": "사전 승인 도구" },
-                { "cmd": "--output-format", "desc": "json/stream-json" },
-                { "cmd": "--max-turns", "desc": "턴 수 제한" },
-                { "cmd": "--max-budget-usd", "desc": "비용 상한" },
-                { "cmd": "--effort", "desc": "노력 수준" },
+                {
+                  "cmd": "--allowedTools",
+                  "desc": "사전 승인 도구"
+                },
+                {
+                  "cmd": "--output-format",
+                  "desc": "json/stream-json"
+                },
+                {
+                  "cmd": "--max-turns",
+                  "desc": "턴 수 제한"
+                },
+                {
+                  "cmd": "--max-budget-usd",
+                  "desc": "비용 상한"
+                },
+                {
+                  "cmd": "--effort",
+                  "desc": "노력 수준"
+                },
                 {
                   "cmd": "--remote",
                   "desc": "claude.ai 웹 세션",
                   "isNew": true
                 },
-                { "cmd": "--channels", "desc": "MCP 채널 알림", "isNew": true },
-                { "cmd": "--debug", "desc": "디버그 모드" },
-                { "cmd": "--verbose", "desc": "상세 로깅" }
+                {
+                  "cmd": "--channels",
+                  "desc": "MCP 채널 알림",
+                  "isNew": true
+                },
+                {
+                  "cmd": "--debug",
+                  "desc": "디버그 모드"
+                },
+                {
+                  "cmd": "--verbose",
+                  "desc": "상세 로깅"
+                }
               ]
             }
           ]
@@ -487,11 +847,26 @@
             {
               "name": "설정 파일",
               "items": [
-                { "cmd": "~/.claude/settings.json", "desc": "사용자 설정" },
-                { "cmd": ".claude/settings.json", "desc": "프로젝트 (공유)" },
-                { "cmd": ".claude/settings.local.json", "desc": "로컬 전용" },
-                { "cmd": "~/.claude.json", "desc": "OAuth, MCP, 상태" },
-                { "cmd": ".mcp.json", "desc": "프로젝트 MCP 서버" }
+                {
+                  "cmd": "~/.claude/settings.json",
+                  "desc": "사용자 설정"
+                },
+                {
+                  "cmd": ".claude/settings.json",
+                  "desc": "프로젝트 (공유)"
+                },
+                {
+                  "cmd": ".claude/settings.local.json",
+                  "desc": "로컬 전용"
+                },
+                {
+                  "cmd": "~/.claude.json",
+                  "desc": "OAuth, MCP, 상태"
+                },
+                {
+                  "cmd": ".mcp.json",
+                  "desc": "프로젝트 MCP 서버"
+                }
               ]
             },
             {
@@ -531,7 +906,10 @@
                   "cmd": "~/.claude/CLAUDE.md",
                   "desc": "전역 (모든 프로젝트)"
                 },
-                { "cmd": ".claude/CLAUDE.md", "desc": "프로젝트 (git 추적)" },
+                {
+                  "cmd": ".claude/CLAUDE.md",
+                  "desc": "프로젝트 (git 추적)"
+                },
                 {
                   "cmd": ".claude/CLAUDE.local.md",
                   "desc": "로컬 (gitignore)"
@@ -546,14 +924,26 @@
             {
               "name": "주요 환경 변수",
               "items": [
-                { "cmd": "ANTHROPIC_API_KEY", "desc": "API 키" },
-                { "cmd": "ANTHROPIC_BASE_URL", "desc": "프록시/게이트웨이" },
-                { "cmd": "ANTHROPIC_MODEL", "desc": "모델 오버라이드" },
+                {
+                  "cmd": "ANTHROPIC_API_KEY",
+                  "desc": "API 키"
+                },
+                {
+                  "cmd": "ANTHROPIC_BASE_URL",
+                  "desc": "프록시/게이트웨이"
+                },
+                {
+                  "cmd": "ANTHROPIC_MODEL",
+                  "desc": "모델 오버라이드"
+                },
                 {
                   "cmd": "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
                   "desc": "최대 출력 토큰"
                 },
-                { "cmd": "CLAUDE_CODE_SIMPLE", "desc": "간단 모드" },
+                {
+                  "cmd": "CLAUDE_CODE_SIMPLE",
+                  "desc": "간단 모드"
+                },
                 {
                   "cmd": "CLAUDE_STREAM_IDLE_TIMEOUT_MS",
                   "desc": "유휴 타임아웃 (90s)",
@@ -577,14 +967,26 @@
                   "cmd": "SessionStart / SessionEnd",
                   "desc": "세션 시작/종료"
                 },
-                { "cmd": "TaskCreated", "desc": "작업 생성", "isNew": true },
+                {
+                  "cmd": "TaskCreated",
+                  "desc": "작업 생성",
+                  "isNew": true
+                },
                 {
                   "cmd": "CwdChanged / FileChanged",
                   "desc": "디렉토리/파일 변경",
                   "isNew": true
                 },
-                { "cmd": "StopFailure", "desc": "중지 실패", "isNew": true },
-                { "cmd": "PostCompact", "desc": "압축 후", "isNew": true },
+                {
+                  "cmd": "StopFailure",
+                  "desc": "중지 실패",
+                  "isNew": true
+                },
+                {
+                  "cmd": "PostCompact",
+                  "desc": "압축 후",
+                  "isNew": true
+                },
                 {
                   "cmd": "WorktreeCreate/Remove",
                   "desc": "워크트리 이벤트",
